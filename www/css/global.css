@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --background-color: #EDEDEF;
+    --primary-color   : #5478ED;
+    --accent-color-1  : #9C1198;
+    --accent-color-2  : #1A1A1A;
+}
+
 *,
 *::before,
 *::after {
@@ -7,17 +16,31 @@
 }
 
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    background-color: var(--background-color);
+    min-height      : 100vh;
+    height          : 100%;
+    scroll-behavior : smooth;
+    text-rendering  : optimizeSpeed;
+    line-height     : 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label {
+    font-family: 'PT Sans', sans-serif;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    * {
+        animation-duration       : 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration      : 0.01ms !important;
+        scroll-behavior          : auto !important;
+    }
 }

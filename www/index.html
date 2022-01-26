@@ -21,33 +21,56 @@
 
     <!-- Do not import any CSS files above global.css -->
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
 
-    <title>Document</title>
+    <title>The AIVoicebank</title>
   </head>
   <body>
-    <section class="company__about">
-      <p>
-        This is a collection of AI generated Voices for the use of various programs and software,
-        such as our text-to-voice app.
-      </p>
-      <label>
-        As AI technology advances we are left with the question:
-        How will our future AI Overlords match their expectations of supremacy? Will they at least
-        sound better than the rest of humanity? To answer this question we have created a database
-        for collecting the best of human voices and used an AI algorithm to combine them into a
-        voice applications and other AI's can use. In modern age where voices are born and lost
-        forever, this is the absolute minimun we can do to preserve our humanity in a vocal form.
-      </label>
+    <header class="page__header">
+      <h1 class="header__logo">Logo</h1>
+      <span class="header__description"></span>
+      <div class="header__translations">
+        <img
+          class="translations__flags"
+          src="resources/flags/finland.png"
+          onclick="location.reload(true)"
+        />
+        <img
+          class="translations__flags"
+          src="resources/flags/united-kingdom.png"
+          onclick="translatePage()"
+        />
+      </div>
+    </header>
 
-      <p>
-        Text-to-voice software using custom voices downloadable from the site. Compatible with taken
-        pictures, websites, Microsoft Word, PowerPoint ect. (introduces the app and its download)
-      </p>
-      <p>
-        Databank of voices AI generated from voice samples of various high tier voice actors. (this
-        is the introduction to the downloads of voices)
-      </p>
-     
-    </section>
+    <div class="container">
+      <h3 data-i18n="home.h3" class="">Koti</h3>
+
+      <section class="company__about">
+        <p data-i18n="about.p.1">
+          Tämä on kokoelma tekoälyn luomia ääniä eri ohjelmien ja ohjelmistojen, kuten tekstistä
+          puheeksi -sovelluksemme, käyttöä varten.
+        </p>
+        <p data-i18n="about.p.2">
+          Tekstistä puheeksi ohjelmisto, joka käyttää mukautettuja ääniä, jotka voidaan ladata
+          sivustolta. Yhteensopiva otettuja kuvia, verkkosivustoja, Microsoft Wordia, PowerPointia
+          jne. (esittelee sovelluksen ja sen ladata)
+        </p>
+        <p data-i18n="about.p.3">
+          Tietopankki äänistä, jotka tekoäly on luonut erilaisten korkean tason ääninäytteiden
+          ääninäytteistä. (tämä on johdatus äänien lataamiseen)
+        </p>
+        <label data-i18n="about.label.1">
+          Tekoälytekniikan kehittyessä meille jää kysymys: Miten tulevat AI Overlordsimme tulevat?
+          vastaamaan heidän ylivallan odotuksiaan? Kuulostavatko ne ainakin paremmalta kuin muut
+          ihmiskunta? Vastataksemme tähän kysymykseen olemme luoneet tietokannan kerätäksemme
+          parhaat ihmisääniä ja käytti tekoälyalgoritmia yhdistääkseen ne äänisovelluksiksi ja
+          muuksi Tekoälyt voivat käyttää. Nykyaikana, jolloin äänet syntyvät ja katoavat ikuisesti,
+          tämä on ehdoton Vähintään mitä voimme tehdä säilyttääksemme ihmisyytemme laulumuodossa.
+        </label>
+      </section>
+    </div>
   </body>
 </html>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/translator.js" defer></script>
