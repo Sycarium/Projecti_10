@@ -26,26 +26,28 @@
     <title>The AI Voicebank - Collection Of Unique AI Generated Voices</title>
   </head>
   <body>
-    <header class="page__header">
+    <header class="page__header" aria-label="Page header">
       <h1 class="header__logo">Logo</h1>
-      <span class="header__description"></span>
+      <span class="header__description" aria-hidden="true"></span>
       <div class="header__translations">
         <img
           class="translations__flags"
           src="resources/flags/finland.png"
+          aria-label="Translate to finnish"
+          focusable="true"
           onclick="location.reload(true)"
         />
         <img
           class="translations__flags"
           src="resources/flags/united-kingdom.png"
+          aria-label="Translate to english"
+          focusable="true"
           onclick="translatePage()"
         />
       </div>
-       <div class="header__menu">
-       <img
-          class="menu__toggle"
-          src="resources/icons/menu-icon-100.png"
-        />
+      <div class="header__menu">
+        <img class="menu__toggle" src="resources/icons/menu-icon-100.png" />
+      </div>
     </header>
 
     <div class="container">
@@ -53,12 +55,13 @@
 
       <section class="company__about">
         <p data-i18n="about.p.1">
-          Tämä on kokoelma tekoälyn luomia "Ääniä" eri ohjelmien ja ohjelmistojen, kuten Tekstiä-puheeksi -sovelluksemme, käyttöä varten.
+          Tämä on kokoelma tekoälyn luomia "Ääniä" eri ohjelmien ja ohjelmistojen, kuten
+          Tekstiä-puheeksi -sovelluksemme, käyttöä varten.
         </p>
         <p data-i18n="about.p.2">
           Tekstiä-puheeksi -ohjelmisto, joka käyttää mukautettuja ääniä, jotka voidaan ladata
-          sivustoltamme. Yhteensopiva otettujen kuvien, verkkosivujen, Microsoft Wordin, PowerPointin
-          jne. kanssa.
+          sivustoltamme. Yhteensopiva otettujen kuvien, verkkosivujen, Microsoft Wordin,
+          PowerPointin jne. kanssa.
         </p>
         <p data-i18n="about.p.3">
           Tietopankki äänistä, jotka tekoäly on luonut erilaisten korkean tason ääninäytteiden
@@ -68,9 +71,9 @@
           Tekoälytekniikan kehittyessä jää meille kysymys: Miten tulevat AI Yliherrat tulevat
           vastaamaan heidän ylivallan odotuksiaan? Kuulostavatko ne ainakin paremmalta kuin
           ihmiskunta? Vastataksemme tähän kysymykseen olemme luoneet tietokannan kerätäksemme
-          parhaat ihmisäänet ja käyttäneet tekoälyalgoritmia yhdistämään ne äänipaketeiksi, joita toiset
-          tekoälyt voivat käyttää. Nykyaikana, jolloin äänet syntyvät ja katoavat iäksi,
-          tämä on ehdoton vähin mitä voimme tehdä säilyttääksemme ihmisyytemme laulumuodossa.
+          parhaat ihmisäänet ja käyttäneet tekoälyalgoritmia yhdistämään ne äänipaketeiksi, joita
+          toiset tekoälyt voivat käyttää. Nykyaikana, jolloin äänet syntyvät ja katoavat iäksi, tämä
+          on ehdoton vähin mitä voimme tehdä säilyttääksemme ihmisyytemme laulumuodossa.
         </label>
       </section>
     </div>
