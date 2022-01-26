@@ -7,7 +7,7 @@ const englishDict = {
   "about.p.3":
     "Databank of voices AI generated from voice samples of various high tier voice actors. (this is the introduction to the downloads of voices)",
   "about.label.1":
-    " As AI technology advances we are left with the question: How will our future AI Overlords match their expectations of supremacy? Will they at least sound better than the rest of humanity? To answer this question we have created a database for collecting the best of human voices and used an AI algorithm to combine them into a voice applications and other AI's can use. In modern age where voices are born and lost forever, this is the absolute minimun we can do to preserve our humanity in a vocal form.",
+    "As AI technology advances we are left with the question: How will our future AI Overlords match their expectations of supremacy? Will they at least sound better than the rest of humanity? To answer this question we have created a database for collecting the best of human voices and used an AI algorithm to combine them into a voice applications and other AI's can use. In modern age where voices are born and lost forever, this is the absolute minimun we can do to preserve our humanity in a vocal form.",
 };
 
 const elements = document.querySelectorAll("[data-i18n]");
