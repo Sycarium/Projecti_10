@@ -20,8 +20,8 @@ www/
 ├─ index.html
 ```
 
-- **docs**, contains are documentation about the repository.
-- **www**, contains are publicly accesible code.
+- **docs**, contains all documentation about the repository.
+- **www**, contains all publicly accesible resources.
 - **css**, contains all stylesheet files.
 - **pages**, contains all pages with their corresponding HTML files.
 - **js**, contains all JavaScript files.
