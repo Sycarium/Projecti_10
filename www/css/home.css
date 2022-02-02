@@ -121,6 +121,10 @@
     filter: brightness(50%);
 }
 
+.download__button:focus {
+    filter: brightness(50%);
+}
+
 .download__container {
     margin-top    : 5px;
     display       : flex;
@@ -156,6 +160,10 @@
 
 .submit__button:hover {
     cursor: pointer;
+    filter: brightness(50%);
+}
+
+.submit__button:focus {
     filter: brightness(50%);
 }
 
