@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+html {
+    position  : relative;
+    min-height: 100%
+}
+
 :root {
     --background-color: #EDEDEF;
     --primary-color   : #5478ED;
@@ -22,6 +27,7 @@ body {
     scroll-behavior : smooth;
     text-rendering  : optimizeSpeed;
     line-height     : 1.5;
+    overflow-x      : hidden;
 }
 
 h1,
@@ -34,6 +40,10 @@ p,
 span,
 label {
     font-family: 'PT Sans', sans-serif;
+}
+
+img {
+    shape-rendering: geometricPrecision;
 }
 
 @media (prefers-reduced-motion: reduce) {
