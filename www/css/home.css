@@ -72,7 +72,7 @@
     flex-basis    : 100%;
     flex-wrap     : nowrap;
     padding       : 25px;
-    gap           : 15px;
+    gap           : 35px;
 }
 
 .flex__container__row>.about__image__container {
@@ -82,22 +82,82 @@
 }
 
 .flex__container__row>.about__text {
-    width: 60%;
+    width: 100%;
 }
 
 .about__image {
-    width     : 65%;
-    transition: width 1s, transform .3s;
+    width     : 15vw;
+    transition: width .5s, transform .3s;
 }
 
 .about__image:hover {
     cursor   : pointer;
-    width    : 70%;
     transform: rotate(45deg);
 }
 
 .about__title {
     color: #5478ED;
+}
+
+.download__button {
+    font-family: 'PT Sans',
+        sans-serif;
+    color           : white;
+    background-color: #5478ED;
+    padding         : .425rem .625rem;
+    transition      : filter .5s;
+}
+
+.download__button:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.download__container {
+    margin-top    : 5px;
+    display       : flex;
+    flex-direction: row;
+    flex-wrap     : wrap;
+    gap           : 10px;
+}
+
+.input__field {
+    display       : flex;
+    flex-direction: column;
+    flex-basis    : 100%;
+    gap           : 3px;
+}
+
+.contact__form {
+    display       : flex;
+    flex-direction: column;
+    flex-basis    : 100%;
+    gap           : 10px;
+}
+
+.submit__button {
+    font-family: 'PT Sans',
+        sans-serif;
+    color           : white;
+    background-color: #5478ED;
+    padding         : .425rem .625rem;
+    width           : 5rem;
+    text-align      : center;
+    transition      : filter .5s;
+}
+
+.submit__button:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.input__control {
+    border : 1px solid #EDEDEF;
+    padding: 3px;
+}
+
+.input__contro:focus-visible {
+    outline: 0;
 }
 
 @media (min-width: 768px) {
@@ -125,5 +185,25 @@
 
     .header__menu {
         display: flex !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .flex__container__row {
+        flex-direction: column;
+    }
+
+    .about__image {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .flex__container__row {
+        flex-direction: column;
+    }
+
+    .about__image {
+        width: 30vw;
     }
 }
