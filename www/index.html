@@ -36,6 +36,7 @@
           aria-label="Translate to finnish"
           focusable="true"
           onclick="location.reload(true)"
+           tabindex="1"
         />
         <img
           class="translations__flags"
@@ -43,6 +44,7 @@
           aria-label="Translate to english"
           focusable="true"
           onclick="translatePage()"
+           tabindex="2"
         />
       </div>
       <div class="header__menu">
@@ -114,9 +116,9 @@
             </p>
             <h3  data-i18n="download.h3.3" class="about__title">Lataa ohjelma</h3>
             <div class="download__container">
-              <a class="download__button">Windows (x64)</a>
-              <a class="download__button">Windows (x86)</a>
-              <a class="download__button">Linux</a>
+              <a class="download__button" tabindex="3">Windows (x64)</a>
+              <a class="download__button" tabindex="4">Windows (x86)</a>
+              <a class="download__button" tabindex="5">Linux</a>
             </div>
           </div>
         </div>
@@ -147,24 +149,24 @@
             <p data-i18n="contact.p.2">
               Yhteyshenkilöt: 
               <br>
-              <b>Elias Westerling</b>, sähköposti: <a href="mailto:elias.westerling@gmail.com">elias.westerling@gmail.com</a><br>
-              <b>Miika Oja-Kaukola</b>, sähköposti: <a href="mailto:miika.oja-kaukola@gmail.com">miika.oja-kaukola@gmail.com</a><br>
-              <b>Tuomas Thuren</b>, sähköposti: <a href="mailto:tuomas.thuren@gmail.com">tuomas.thuren@gmail.com</a><br>
-              <b>Mattias Thuren</b>, sähköposti: <a href="mailto:mattias.thuren@gmail.com">mattias.thuren@gmail.com</a><br>
-              <b>Matias Nuotio</b>, sähköposti: <a href="mailto:matias.nuotio@gmail.com">matias.nuotio@gmail.com</a><br>
-              <b>Olli-Pekka Miesvirta</b> - sähköposti: <a href="mailto:olli-pekka.miesvirta@gmail.com">olli-pekka.miesvirta@gmail.com</a>
+              <b>Elias Westerling</b>, sähköposti: <a href="mailto:elias.westerling@gmail.com" tabindex="7">elias.westerling@gmail.com</a><br>
+              <b>Miika Oja-Kaukola</b>, sähköposti: <a href="mailto:miika.oja-kaukola@gmail.com" tabindex="8">miika.oja-kaukola@gmail.com</a><br>
+              <b>Tuomas Thuren</b>, sähköposti: <a href="mailto:tuomas.thuren@gmail.com" tabindex="9">tuomas.thuren@gmail.com</a><br>
+              <b>Mattias Thuren</b>, sähköposti: <a href="mailto:mattias.thuren@gmail.com" tabindex="10">mattias.thuren@gmail.com</a><br>
+              <b>Matias Nuotio</b>, sähköposti: <a href="mailto:matias.nuotio@gmail.com" tabindex="11">matias.nuotio@gmail.com</a><br>
+              <b>Olli-Pekka Miesvirta</b> - sähköposti: <a href="mailto:olli-pekka.miesvirta@gmail.com" tabindex="12">olli-pekka.miesvirta@gmail.com</a>
             <h3 data-i18n="contact.h3.3" class="about__title">Ota meihin yhteyttä</h3>
             <div class="contact__form">
               <div class="input__field">
                 <label data-i18n="contact.label.1">Sähköpostiosoite:</label>
-                <input class="input__control" type="email">
+                <input class="input__control" type="email" tabindex="13">
               </div>
               <div class="input__field">
                 <label data-i18n="contact.label.2">Viesti:</label>
-                <textarea class="input__control" type="email" rows=10 style="resize: none;"></textarea>
+                <textarea class="input__control" type="email" rows=10 style="resize: none;" tabindex="14"></textarea>
               </div>
                <div class="input__field">
-               <a data-i18n="contact.a.1" class="submit__button">Lähetä</a>
+               <a data-i18n="contact.a.1" class="submit__button" tabindex="15">Lähetä</a>
               </div>
             </div>
           </div>
