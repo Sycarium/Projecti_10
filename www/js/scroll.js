@@ -18,7 +18,6 @@ showDrawer = () => {
       },
       500
     );
-    // $(".side__drawer").css("display", "none");
     drawerState = false;
   } else {
     $(".side__drawer").animate(
@@ -27,7 +26,6 @@ showDrawer = () => {
       },
       500
     );
-    // $(".side__drawer").css("display", "inline");
     drawerState = true;
   }
 };

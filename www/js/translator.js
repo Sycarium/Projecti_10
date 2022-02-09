@@ -20,7 +20,25 @@ const englishDict = {
   "contact.a.1": "Send",
   "nav.li.1": "Information",
   "nav.li.2": "Pricing",
-  "nav.li.3": "Contact",
+  "nav.li.3": "Download",
+  "nav.li.4": "Contact",
+  "information.h3.1": "What is this program?",
+  "information.p.1":
+    'This is a collection of "Sounds" created by artificial intelligence for use with various programs and software, such as our Text-to-Speech application',
+  "information.h3.2": "Who are these aimed at?",
+  "information.p.2":
+    "The voices are aimed at different companies, as well as at individuals who have use for a text-to-speech program for example in teaching and presentation, and for the blind for general use.",
+  "information.h3.3": "Why?",
+  "information.p.3":
+    "It is important that at a time when voices are born and disappear, the best voices are stored for future use, in order to preserve humanity in the form of song as the AIs of the future displace humanity.",
+  "pricing.h3.1": "Pricing",
+  "pricing.p.1":
+    "The application has different uses, the price of which varies. You can use it on a monthly basis for personal use. You can also use it for only a short time at a low per minute rate. Also included is commercial use, which is agreed to be a certain% of the revenue for which the app has been used.",
+  "pricing.h3": "Pricing",
+  "download.h3": "Download",
+  "contact.h3": "Contact",
+  "contact-us.h3": "Contact us",
+  "contact-us.h3.1": "Please fill the information below",
 };
 
 const elements = document.querySelectorAll("[data-i18n]");
