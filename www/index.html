@@ -27,11 +27,12 @@
   </head>
   <body>
     <header class="page__header" aria-label="Page header">
-      <h1 class="header__logo">The AI Voicebank</h1>
+      <h1 class="header__logo">The AIV</h1>
         <ul class="header__description">
           <li data-i18n="nav.li.1" onclick="scrollToAnchor('information')">Tietoa</li>
           <li data-i18n="nav.li.2" onclick="scrollToAnchor('pricing')">Hinnoittelu</li>
-          <li data-i18n="nav.li.3" onclick="scrollToAnchor('contact')">Yhteytiedot</li>
+          <li data-i18n="nav.li.3" onclick="scrollToAnchor('download')">Lataus</li>
+          <li data-i18n="nav.li.4" onclick="scrollToAnchor('contact')">Yhteytiedot</li>
         </ul>
       </span>
       <div class="header__translations">
@@ -52,13 +53,38 @@
           tabindex="2"
         />
       </div>
-      <div class="header__menu">
+      <div class="header__menu" onclick="showDrawer();">
         <img class="menu__toggle" src="resources/icons/menu-icon-100.png" />
       </div>
     </header>
-
+    <div class="side__drawer">
+      <ul class="header__description__drawer">
+          <li data-i18n="nav.li.1" onclick="scrollToAnchor('information')">Tietoa</li>
+          <li data-i18n="nav.li.2" onclick="scrollToAnchor('pricing')">Hinnoittelu</li>
+          <li data-i18n="nav.li.3" onclick="scrollToAnchor('download')">Lataus</li>
+          <li data-i18n="nav.li.4" onclick="scrollToAnchor('contact')">Yhteytiedot</li>
+        </ul>
+      </span>
+      <div class="header__translations__drawer">
+        <img
+          class="header__translations__flags"
+          src="resources/flags/finland.png"
+          aria-label="Translate to finnish"
+          focusable="true"
+          onclick="location.reload(true)"
+          tabindex="1"
+        />
+        <img
+          class="header__translations__flags"
+          src="resources/flags/united-kingdom.png"
+          aria-label="Translate to english"
+          focusable="true"
+          onclick="translatePage()"
+          tabindex="2"
+        />
+      </div>
+    </div>
     <div id="particles-js"></div>
-
     <div class="container">
       <h3 id="information" data-i18n="information.h3" class="page__title">Tietoa</h3>
       <section class="company__about">
@@ -172,7 +198,7 @@
           </div>
         </div>
       </section>
-      <h3 data-i18n="pricing.h3" class="page__title">Ota meihin yhteyttä!</h3>
+      <h3 id="contact-us" data-i18n="pricing.h3" class="page__title">Ota meihin yhteyttä!</h3>
       <section class="company__about">
         <div class="flex__container__row">
           <div class="about__image__container">
